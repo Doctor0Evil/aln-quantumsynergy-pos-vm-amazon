@@ -1,0 +1,13 @@
+contract VmAmazonBridge ver 1.0.0.5 {
+    provider.name   = "amazon_aws";
+    provider.mode   = "static_vm";
+    vm.profile      = "aln_vmamazon.aln";
+
+    s3.bucket       = "aln-ppl-s3-amazon-aws";
+    pak.install[]   = ["aln_vmamazon.aln", "aln.cmd.amazon.vm.actions.aln", "pak_stem.bin"];
+
+    fs.homedir.path = "v://System/ALN/src/Main/System/aln_vmamazon.aln";
+    fs.system.root  = "V://System";
+
+    audit.multisig  = "Googolswarm";
+}
