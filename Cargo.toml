@@ -1,0 +1,21 @@
+[package]
+name = "aln-quantumsynergy-pos-vm-amazon"
+version = "1.0.5"
+edition = "2021"
+description = "ALN QuantumSynergyPOS static deployment with Amazon VM bridge, Petabyte VFS, and AMPM Verifone merchant connectivity."
+license = "MIT"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.42", features = ["full"] }
+thiserror = "1.0"
+bytes = "1.9"
+uuid = { version = "1.10", features = ["v4"] }
+hyper = { version = "1.4", features = ["full"] }
+http = "1.1"
+toml = "0.8"
+serde_yaml = "0.9"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+rand = "0.9"
