@@ -1,0 +1,8 @@
+homedir_aliases:
+  HOMEDIR$: "V://System"
+  ALN_VM_AMAZON: "v://System/ALN/src/Main/System/aln_vmamazon.aln"
+vfs_backends:
+  - name: "primary_petabyte_array"
+    mount: "V://System"
+    capacity_units: 1
+    capacity_scale: "Petabyte"
