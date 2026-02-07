@@ -1,0 +1,29 @@
+{
+  "sync_id": "a7b9c3d2-5e6f-4a1b-9c2d-3e4f5a6b7c8d",
+  "aln_cmd_profile": "aln.cmd.sync!quantum_ar!ver:1.0.5&exe.aln.pl.hyp.t1",
+  "static_deployment": {
+    "enabled": true,
+    "framework_version": "aln_framework.v1.0.0.5",
+    "deploy_with_aln_contract": true,
+    "offshore_apis": true
+  },
+  "storage": {
+    "homedir": "v://System/ALN/src/Main/System/aln_vmamazon.aln",
+    "system_root": "V://System",
+    "mode_units": 1,
+    "scale": "Petabyte"
+  },
+  "terminal": {
+    "type": "image",
+    "os": "QuantumSynergyPOS",
+    "merchant_terminal_vendor": "verifone",
+    "merchant_terminal_id_source": "fetch_from_host",
+    "hostname": "ampm_42445_verifone"
+  },
+  "connection": {
+    "preferred_host_port": 8800,
+    "framework_connect": "Alien_Language_Network",
+    "max_tries": 10,
+    "branch": "branch0.AMPM.merch.aln.pos"
+  }
+}
