@@ -1,0 +1,16 @@
+terminal_image:
+  type: "image"
+  os: "QuantumSynergyPOS"
+  destination: "V://System"
+merchant:
+  provider: "verifone"
+  id_source: "fetch_from_host"
+  hostname: "ampm_42445_verifone"
+network:
+  framework_connect: "Alien_Language_Network"
+  port: 8800
+  max_tries: 10
+  retry_with_new_host: true
+branch_enforcement:
+  branch: "branch0.AMPM.merch.aln.pos"
+  is_verified_enforce: true
