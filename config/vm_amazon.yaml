@@ -1,0 +1,17 @@
+vm_profile: "aln_vmamazon.aln"
+provider: "amazon_aws"
+s3_bucket: "aln-ppl-s3-amazon-aws"
+pak:
+  install:
+    - "aln_vmamazon.aln"
+    - "aln.cmd.amazon.vm.actions.aln"
+    - "pak_stem.bin"
+paths:
+  homedir: "v://System/ALN/src/Main/System/aln_vmamazon.aln"
+  system_root: "V://System"
+storage:
+  mode_units: 1
+  scale: "Petabyte"
+flags:
+  sims_enabled: false
+  sim_barriers_enabled: false
